@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Google</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    
+    header {
+      margin-top: 150px;
+    }
+
+    .search-box {
+      margin-top: 30px;
+    }
+
+    .search-input {
+      width: 500px;
+      padding: 12px 20px;
+      border: 1px solid #dfe1e5;
+      border-radius: 24px;
+      box-shadow: none;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #f8f9fa;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .buttons button:hover {
+      border: 1px solid #ccc;
+    }
+
+    .language {
+      margin-top: 250px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img
+      src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+      alt="Logo de Google"
+    />
+  </header>
+
+  <main>
+    <form action="https://www.google.com/search" method="GET">
+      <div class="search-box">
+        <input
+          type="text"
+          name="q"
+          class="search-input"
+          placeholder="Buscar en Google"
+          aria-label="Buscar"
+        />
+      </div>
+
+      <div class="buttons">
+        <button type="submit">Buscar con Google</button>
+        <button type="submit" name="btnI">Voy a tener suerte</button>
+      </div>
+    </form>
+
+    <div class="language">
+      Google disponible en: <a href="#">Español (Latinoamérica)</a>
+    </div>
+  </main>
+
+</body>
+</html>
